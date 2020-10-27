@@ -1,0 +1,67 @@
+\NeedsTeXFormat{LaTeX2e}[2011/06/27]
+
+\documentclass{beamer}[2012/10/15]
+\usetheme{Bergen}
+\usecolortheme{beaver}
+
+\setbeamercolor{title}{use={frametitle},fg=frametitle.fg}
+
+\def\insertauthorindicator{\usebeamercolor[fg]{frametitle}Who?}
+\def\insertinstituteindicator{\usebeamercolor[fg]{frametitle}From?}
+\def\insertdateindicator{\usebeamercolor[fg]{frametitle}When?}
+
+\usepackage[utf8]{inputenc}[2008/03/30]
+\usepackage[T1]{fontenc}[2005/09/27]
+
+\usepackage{amsmath}[2013/01/14]
+\usepackage{amssymb}[2013/01/14]
+
+\usepackage{graphicx}[1999/02/16]
+
+\usepackage{siunitx}
+\sisetup{per-mode=symbol-or-fraction}
+\DeclareSIUnit\month{mo}
+\DeclareSIUnit\millibar{mb}
+
+\usepackage{csquotes}
+\usepackage[english]{babel}
+
+\usepackage[style=authoryear]{biblatex}
+
+\addbibresource{uwthesis.bib}
+
+\renewcommand\rmdefault{put}
+\renewcommand\familydefault\rmdefault
+
+\frenchspacing
+
+\title{Time Step Sensitivity and Process Coupling in Climate Models}
+\author{Sean Patrick Santos}
+\institute{University of Washington}
+\date{November 13, 2020}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section*{Outline}
+\frame{\tableofcontents}
+
+\section{Introduction}
+
+\begin{frame}
+  \frametitle{What is stuff?}
+  \begin{itemize}[<+->]
+  \item Blah
+  \end{itemize}
+\end{frame}
+
+\section{References}
+
+\begin{frame}
+  \frametitle{Some references}
+  \nocite{Santos2020b}
+  \printbibliography
+\end{frame}
+
+\end{document}
